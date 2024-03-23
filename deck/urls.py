@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import DeckCreateListView, DeckItemCreateListView, DeckRetrieveUDView, ItemRUDView
 
-urlpatterns =[
+urlpatterns = [
     path('', DeckCreateListView.as_view(), name='add_list_deck'),
     path('<int:pk>', DeckRetrieveUDView.as_view(), name='individual_deck'),
 
